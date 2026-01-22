@@ -27,19 +27,19 @@
   <!-- Favicon 配置 -->
   
     
-      <link rel="icon" type="image/x-icon" href="/favicon.ico">
+      <link rel="icon" type="image/x-icon" href="../../favicon.ico">
     
     
-      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
     
     
-      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
     
     
-      <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+      <link rel="icon" type="image/png" sizes="192x192" href="../../favicon-192x192.png">
     
     
-      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
     
   
 
@@ -54,29 +54,29 @@
   <script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js" crossorigin="anonymous"></script>
 
   <!-- 主题样式 -->
-  <link rel="stylesheet" href="css/theme-colors.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/code.css">
-  <link rel="stylesheet" href="css/code-custom.css">
-  <link rel="stylesheet" href="css/code-languages.css">
-  <link rel="stylesheet" href="css/mermaid.css">
+  <link rel="stylesheet" href="../../css/theme-colors.css">
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/code.css">
+  <link rel="stylesheet" href="../../css/code-custom.css">
+  <link rel="stylesheet" href="../../css/code-languages.css">
+  <link rel="stylesheet" href="../../css/mermaid.css">
 
-  <link rel="stylesheet" href="css/vs-code.css">
-  <link rel="stylesheet" href="css/post.css?v=1769088325946">
-  <link rel="stylesheet" href="css/tag.css">
-  <link rel="stylesheet" href="css/categories.css">
-  <link rel="stylesheet" href="css/archive.css">
-  <link rel="stylesheet" href="css/search.css">
-  <link rel="stylesheet" href="css/mobile.css">  <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="css/elements.css">
+  <link rel="stylesheet" href="../../css/vs-code.css">
+  <link rel="stylesheet" href="../../css/post.css?v=1769088325941">
+  <link rel="stylesheet" href="../../css/tag.css">
+  <link rel="stylesheet" href="../../css/categories.css">
+  <link rel="stylesheet" href="../../css/archive.css">
+  <link rel="stylesheet" href="../../css/search.css">
+  <link rel="stylesheet" href="../../css/mobile.css">  <link rel="stylesheet" href="../../css/responsive.css">
+  <link rel="stylesheet" href="../../css/elements.css">
 
   <!-- 添加 JetBrains Mono 字体 -->  
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- Add any custom head content here -->
 
-  <script defer src="js/explorer.js"></script>
-  <script defer src="js/code-enhance.js"></script>
+  <script defer src="../../js/explorer.js"></script>
+  <script defer src="../../js/code-enhance.js"></script>
 <!-- hexo injector head_end start -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 
@@ -98,7 +98,7 @@
     </div>
     
     <div class="nav-right">
-      <a href="/" class="nav-item active">
+      <a href="/" class="nav-item ">
         <i class="fas fa-home"></i>
         <span>首页</span>
       </a>
@@ -106,7 +106,7 @@
         <i class="fas fa-archive"></i>
         <span>归档</span>
       </a>
-      <a href="/categories/" class="nav-item ">
+      <a href="/categories/" class="nav-item active">
         <i class="fas fa-folder"></i>
         <span>分类</span>
       </a>
@@ -177,143 +177,62 @@
 
 
 <div class="vscode-container">
+  <!-- 左侧资源管理器 -->
   <div class="sidebar-explorer">
-    <div class="explorer-header">
-      <span class="explorer-title">
-        <i class="fas fa-folder-open"></i> EXPLORER
-      </span>
-    </div>
-    
     <div class="explorer-section">
       <div class="section-header">
-        <i class="fas fa-chevron-down"></i>
-        <span>BLOG CONTENTS</span>
+        <i class="fas fa-folder-open"></i>
+        <span>CATEGORIES</span>
       </div>
-      
       <div class="section-content">
-          <div class="folder">
+        
+          <a class="category-item " href="../%E5%89%A7%E9%80%8F%E5%86%85%E5%AE%B9/">
             <i class="fas fa-folder"></i>
-            <a href="categories/%E5%89%A7%E9%80%8F%E5%86%85%E5%AE%B9/" class="category-link">
-              <span>剧透内容</span>
-              <span class="count">(1)</span>
-            </a>
-          </div>
-          <div class="folder">
+            <span>剧透内容</span>
+            <span class="count">(1)</span>
+          </a>
+        
+          <a class="category-item active" href="">
             <i class="fas fa-folder"></i>
-            <a href="categories/%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%AD%A3%E6%96%87/" class="category-link">
-              <span>第一卷正文</span>
-              <span class="count">(1)</span>
-            </a>
-          </div>
-      </div>
-    </div>
-    
-    <div class="explorer-section">
-      <div class="section-header">
-        <i class="fas fa-chevron-down"></i>
-        <span>RECENT POSTS</span>
-      </div>
-      
-      <div class="section-content">
-          <div class="file">
-            <i class="fas fa-file-code"></i>
-            <a href="2026/01/21/novel/Volumn-1/Chapter-1/">第 1 章 新学校</a>
-          </div>
-          <div class="file">
-            <i class="fas fa-file-code"></i>
-            <a href="2026/01/21/novel-timeline/">小说时间线</a>
-          </div>
-      </div>
-    </div>
-
-    <div class="explorer-section">
-      <div class="section-header">
-        <i class="fas fa-chevron-down"></i>
-        <span>TAGS</span>
-      </div>
-      
-      <div class="section-content">
+            <span>第一卷正文</span>
+            <span class="count">(1)</span>
+          </a>
         
       </div>
     </div>
   </div>
 
+  <!-- 主要内容区域 -->
   <div class="editor-content">
     <div class="tab-bar">
       <div class="tab active">
-        <i class="fas fa-home"></i>
-        <span>welcome.md</span>
+        <i class="fas fa-folder-open"></i>
+        <span>第一卷正文.md</span>
       </div>
     </div>
     
     <div class="content-area">
-      <div class="posts-container">
-          <div class="post-card">
-            <div class="post-header">
+      <div class="category-detail">
+        <div class="category-header">
+          <i class="fas fa-folder"></i>
+          <h2>第一卷正文</h2>
+          <span class="count">1 posts</span>
+        </div>
+        <div class="category-posts">
+          
+            <div class="post-item">
               <i class="fas fa-file-alt"></i>
-              <span class="post-title">
-                <a href="2026/01/21/novel/Volumn-1/Chapter-1/">第 1 章 新学校</a>
-                
-              </span>
-            </div>
-            
-            <div class="post-meta">
-              <span class="date">
-                <i class="fas fa-calendar-alt"></i>
-                2026-01-21
-              </span>
-                <span class="category">
-                  <i class="fas fa-folder"></i>
-                  <a class="category-link" href="categories/%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%AD%A3%E6%96%87/">第一卷正文</a>
+              <div class="post-info">
+                <a href="../../2026/01/21/novel/Volumn-1/Chapter-1/">第 1 章 新学校</a>
+                <span class="date">
+                  <i class="fas fa-calendar-alt"></i>
+                  2026-01-21
                 </span>
+              </div>
             </div>
-            
-            <div class="post-excerpt">
-              最近更新 2026-01-22
-            </div>
-            
-            <div class="post-footer">
-              <a href="2026/01/21/novel/Volumn-1/Chapter-1/" class="read-more">
-                <i class="fas fa-code"></i>
-                Read More
-              </a>
-            </div>
-          </div>
-          <div class="post-card">
-            <div class="post-header">
-              <i class="fas fa-file-alt"></i>
-              <span class="post-title">
-                <a href="2026/01/21/novel-timeline/">小说时间线</a>
-                
-              </span>
-            </div>
-            
-            <div class="post-meta">
-              <span class="date">
-                <i class="fas fa-calendar-alt"></i>
-                2026-01-21
-              </span>
-                <span class="category">
-                  <i class="fas fa-folder"></i>
-                  <a class="category-link" href="categories/%E5%89%A7%E9%80%8F%E5%86%85%E5%AE%B9/">剧透内容</a>
-                </span>
-            </div>
-            
-            <div class="post-excerpt">
-              时间线（本文涉及剧透！！！）
-            </div>
-            
-            <div class="post-footer">
-              <a href="2026/01/21/novel-timeline/" class="read-more">
-                <i class="fas fa-code"></i>
-                Read More
-              </a>
-            </div>
-          </div>
+          
+        </div>
       </div>
-      
-      
-
     </div>
   </div>
 </div>
@@ -457,10 +376,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 <!-- 添加所有需要的脚本 -->
-<script src="js/search.js"></script>
-<script src="js/theme-switch.js"></script>
+<script src="../../js/search.js"></script>
+<script src="../../js/theme-switch.js"></script>
 
-<script src="js/password-protect.js?v=1769088325947"></script>
+<script src="../../js/password-protect.js?v=1769088325941"></script>
 
     <script>
       // 移动端菜单切换
