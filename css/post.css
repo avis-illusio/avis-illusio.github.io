@@ -84,13 +84,20 @@
 }
 
 .vscode-markdown blockquote {
-  border-left: 4px solid var(--vscode-link);
+  /* 原本的样式 */
+  /* border-left: 4px solid var(--vscode-link);
   margin: 1.5em 0 1.7em;
   padding: 0.8em 1.2em;
-  background: var(--vscode-selection); /* 使用半透明的主题色作为背景 */
-  color: var(--vscode-text); /* 略微提亮引用文字颜色 */
-  border-radius: 0 4px 4px 0; /* 添加右侧圆角 */
-  box-shadow: 0 2px 8px var(--vscode-shadow); /* 添加微妙阴影 */
+  background: var(--vscode-selection); 使用半透明的主题色作为背景
+  color: var(--vscode-text); 略微提亮引用文字颜色
+  border-radius: 0 4px 4px 0; 添加右侧圆角
+  box-shadow: 0 2px 8px var(--vscode-shadow); 添加微妙阴影
+  font-style: italic; 斜体强调引用文本
+   */
+  border-left: 4px solid var(--vscode-link);
+  margin: 0.8em 0;
+  padding: 0 15px;
+  color: #777777; /* var(--vscode-text); /* 略微提亮引用文字颜色 */
   font-style: italic; /* 斜体强调引用文本 */
 }
 

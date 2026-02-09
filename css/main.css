@@ -1006,3 +1006,26 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 0;
   }
 }
+
+
+
+/* Use by: <span class="you-know-too-much" title="你知道的太多了"></span> */
+.you-know-too-much, .you-know-too-much a, a .you-know-too-much, .you-know-too-much a.new {
+    background-color: #252525;
+    color: #252525;
+    text-shadow: none;
+}
+.you-know-too-much:hover, .you-know-too-much:active,
+.you-know-too-much:hover .you-know-too-much, .you-know-too-much:active .you-know-too-much {
+    color: white !important;
+}
+.you-know-too-much:hover a, a:hover .you-know-too-much,
+.you-know-too-much:active a, a:active .you-know-too-much {
+    color: lightblue !important;
+}
+.you-know-too-much:hover .new, .you-know-too-much .new:hover, .new:hover .you-know-too-much,
+.you-know-too-much:active .new, .you-know-too-much .new:active, .new:active .you-know-too-much {
+    color: #BA0000 !important;
+}
+
+/*阅读更多：https://zh.moegirl.org/MediaWiki:Mobile.css 本文引自萌娘百科(https://zh.moegirl.org)，文字内容默认使用《知识共享 署名-非商业性使用-相同方式共享 3.0》协议。*/
