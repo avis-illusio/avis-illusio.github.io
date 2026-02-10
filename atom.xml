@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>
+    <name>梦羽Avis_Illusio</name>
+  </author>
+  <generator uri="https://hexo.io/">Hexo</generator>
+  <id>https://avis-illusio.github.io/</id>
+  <link href="https://avis-illusio.github.io/" rel="alternate"/>
+  <link href="https://avis-illusio.github.io/atom.xml" rel="self"/>
+  <rights>All rights reserved 2026, 梦羽Avis_Illusio</rights>
+  <subtitle>《光环》原创小说</subtitle>
+  <title>《光环》档案馆</title>
+  <updated>2026-02-09T15:31:29.746Z</updated>
+  <entry>
+    <author>
+      <name>梦羽Avis_Illusio</name>
+    </author>
+    <category term="第一卷正文" scheme="https://avis-illusio.github.io/categories/%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%AD%A3%E6%96%87/"/>
+    <id>https://avis-illusio.github.io/2026/02/09/novel/Volumn-1/Chapter-2/</id>
+    <link href="https://avis-illusio.github.io/2026/02/09/novel/Volumn-1/Chapter-2/"/>
+    <published>2026-02-09T04:24:29.097Z</published>
+    <summary>改动次数：0，最新于2026年2月9日完成第一次发布</summary>
+    <title>第 2 章 觐见之地</title>
+    <updated>2026-02-09T15:31:29.746Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>梦羽Avis_Illusio</name>
+    </author>
+    <category term="第一卷正文" scheme="https://avis-illusio.github.io/categories/%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%AD%A3%E6%96%87/"/>
+    <id>https://avis-illusio.github.io/2026/01/21/novel/Volumn-1/Chapter-1/</id>
+    <link href="https://avis-illusio.github.io/2026/01/21/novel/Volumn-1/Chapter-1/"/>
+    <published>2026-01-21T14:24:47.289Z</published>
+    <summary>改动次数：1，最新于2026年1月22日完成更正</summary>
+    <title>第 1 章 新学校</title>
+    <updated>2026-02-07T10:33:20.480Z</updated>
+  </entry>
+</feed>
