@@ -62,7 +62,7 @@
   <link rel="stylesheet" href="../../../../css/mermaid.css">
 
   <link rel="stylesheet" href="../../../../css/vs-code.css">
-  <link rel="stylesheet" href="../../../../css/post.css?v=1770983054751">
+  <link rel="stylesheet" href="../../../../css/post.css?v=1770983369527">
   <link rel="stylesheet" href="../../../../css/tag.css">
   <link rel="stylesheet" href="../../../../css/categories.css">
   <link rel="stylesheet" href="../../../../css/archive.css">
@@ -80,8 +80,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
-<!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="atom.xml" title="《光环》档案馆" type="application/atom+xml">
-</head>
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.1"></head>
 
   <body>
     <div class="wrapper">
@@ -204,16 +203,6 @@
       </div>
       <div class="section-content">
         
-          <div class="file">
-            <i class="fas fa-file-code"></i>
-            <a href="../Chapter-2/">第 2 章 觐见之地</a>
-          </div>
-        
-          <div class="file">
-            <i class="fas fa-file-code"></i>
-            <a href="../Chapter-1/">第 1 章 新学校</a>
-          </div>
-        
       </div>
     </div>
     
@@ -323,146 +312,6 @@
         
 
 
-<div class="vs-recommended-posts">
-  <div class="vs-recommended-header">
-    <div class="section-header">
-      <i class="fas fa-lightbulb"></i>
-      <span>相关文章</span>
-    </div>
-  </div>
-  
-  <div class="vs-recommended-grid">
-    
-      <div class="vs-recommended-item" data-index="0" tabindex="0">
-        <a href="../Chapter-2/" class="vs-recommended-link">
-          <!-- 文章信息 -->
-          <div class="vs-recommended-content">
-            <div class="vs-recommended-title">
-              <i class="fas fa-file-code"></i>
-              <span>第 2 章 觐见之地</span>
-            </div>
-            
-            <div class="vs-recommended-excerpt">
-              世界渐渐展露出它最神秘的一面。
-            </div>
-            
-            <div class="vs-recommended-meta">
-              
-              
-              
-              
-              <span class="vs-meta-info">
-                <span class="vs-date">
-                  <i class="fas fa-calendar-alt"></i>
-                  2月 09
-                </span>
-                <span class="vs-reading-time">
-                  <i class="fas fa-clock"></i>
-                  1 min
-                </span>
-              </span>
-            </div>
-          </div>
-        </a>
-      </div>
-    
-      <div class="vs-recommended-item" data-index="1" tabindex="0">
-        <a href="../Chapter-1/" class="vs-recommended-link">
-          <!-- 文章信息 -->
-          <div class="vs-recommended-content">
-            <div class="vs-recommended-title">
-              <i class="fas fa-file-code"></i>
-              <span>第 1 章 新学校</span>
-            </div>
-            
-            <div class="vs-recommended-excerpt">
-              新的开始，最初的多重命运之根。
-            </div>
-            
-            <div class="vs-recommended-meta">
-              
-              
-              
-              
-              <span class="vs-meta-info">
-                <span class="vs-date">
-                  <i class="fas fa-calendar-alt"></i>
-                  1月 21
-                </span>
-                <span class="vs-reading-time">
-                  <i class="fas fa-clock"></i>
-                  1 min
-                </span>
-              </span>
-            </div>
-          </div>
-        </a>
-      </div>
-    
-  </div>
-  
-  <!-- 查看更多 -->
-  <div class="vs-recommended-footer">
-    <a href="../../../../archives/" class="vs-view-more">
-      <i class="fas fa-folder-open"></i>
-      <span>查看更多文章</span>
-      <i class="fas fa-chevron-right"></i>
-    </a>
-  </div>
-</div>
-
-<script>
-// 键盘导航支持
-document.addEventListener('DOMContentLoaded', function() {
-  const items = document.querySelectorAll('.vs-recommended-item');
-  let currentIndex = -1;
-  
-  // 键盘事件
-  document.addEventListener('keydown', function(e) {
-    if (!items.length) return;
-    
-    if (e.key === 'Tab') {
-      // Tab键导航由浏览器处理
-      return;
-    }
-    
-    if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
-      e.preventDefault();
-      
-      // 移除当前高亮
-      if (currentIndex >= 0) {
-        items[currentIndex].classList.remove('vs-focused');
-      }
-      
-      // 更新索引
-      if (e.key === 'ArrowRight') {
-        currentIndex = (currentIndex + 1) % items.length;
-      } else {
-        currentIndex = currentIndex <= 0 ? items.length - 1 : currentIndex - 1;
-      }
-      
-      // 添加新高亮
-      items[currentIndex].classList.add('vs-focused');
-      items[currentIndex].focus();
-    }
-    
-    if (e.key === 'Enter' && currentIndex >= 0) {
-      const link = items[currentIndex].querySelector('a');
-      if (link) link.click();
-    }
-  });
-  
-  // 鼠标悬停时更新当前索引
-  items.forEach((item, index) => {
-    item.addEventListener('mouseenter', function() {
-      currentIndex = index;
-      items.forEach(i => i.classList.remove('vs-focused'));
-      item.classList.add('vs-focused');
-    });
-  });
-});
-</script>
-
         
         <!-- 评论区 -->
         
@@ -568,7 +417,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     // Search i18n strings
     search_placeholder: "输入关键词搜索...",
     search_no_results: "未找到相关结果",
-    search_result: "نتيجة",
+    search_result: "resultado",
     search_results: "搜索结果",
     search_results_found: "找到 undefined 个结果",
     search_in: "搜索范围",
@@ -613,7 +462,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 <script src="../../../../js/search.js"></script>
 <script src="../../../../js/theme-switch.js"></script>
 
-<script src="../../../../js/password-protect.js?v=1770983054752"></script>
+<script src="../../../../js/password-protect.js?v=1770983369528"></script>
 
     <script>
       // 移动端菜单切换
