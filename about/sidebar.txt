@@ -3,3 +3,4 @@
 <span class="you-know-too-much" title="你知道的太多了"><del>我不行了我把href打成herf了</del></span></br>
 后面是一些小秘密：</br>
 <span class="you-know-too-much" title="你知道的太多了">有一些我隐藏的文章可以直接访问，密码大多都是i am administrator，如果不是请看密码的提示哦</span>
+<span class="you-know-too-much" title="你知道的太多了">剧情里提到的档案都可以通过直接输入 https://avis-illusio.github.io/halo-archives/{档案ID} 来访问</span>
