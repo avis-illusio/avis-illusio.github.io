@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>
+    <name>梦羽Avis_Illusio</name>
+  </author>
+  <generator uri="https://hexo.io/">Hexo</generator>
+  <id>https://avis-illusio.github.io/</id>
+  <link href="https://avis-illusio.github.io/" rel="alternate"/>
+  <link href="https://avis-illusio.github.io/atom.xml" rel="self"/>
+  <rights>All rights reserved 2026, 梦羽Avis_Illusio</rights>
+  <subtitle>《光环》原创小说</subtitle>
+  <title>《光环》档案馆</title>
+  <updated>2026-02-13T11:55:48.391Z</updated>
+  <entry>
+    <author>
+      <name>梦羽Avis_Illusio</name>
+    </author>
+    <content>
+      <![CDATA[<p>……这里没有什么好看的。</p>]]>
+    </content>
+    <id>https://avis-illusio.github.io/posts/x/</id>
+    <link href="https://avis-illusio.github.io/posts/x/"/>
+    <published>1969-12-31T16:00:00.000Z</published>
+    <summary>
+      <![CDATA[<p>……这里没有什么好看的。</p>]]>
+    </summary>
+    <title>本文用于防止首页因为没有文章而消失</title>
+    <updated>2026-02-13T11:55:48.391Z</updated>
+  </entry>
+</feed>
