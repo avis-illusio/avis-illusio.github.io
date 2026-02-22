@@ -14,8 +14,10 @@
   border-right: 1px solid var(--vscode-border);
   padding: 10px 0;
   position: sticky; /* 添加固定定位 */
-  top: 48px; /* 头部导航栏高度 */
-  height: calc(100vh - 48px); /* 减去头部导航栏高度 */
+  top: 0px; /* 头部导航栏高度 */
+  height: calc(100vh ); /* 减去头部导航栏高度- 48px */
+  /* top: var(--vs-header-height, 48px); 使用动态头部高度 */
+  /* height: calc(100vh - var(--vs-header-height, 48px)); 减去头部高度 */
   overflow-y: auto; /* 允许内容滚动 */
   scrollbar-width: thin; /* Firefox 细滚动条 */
   scrollbar-color: var(--vscode-border) transparent; /* Firefox 滚动条颜色 */
@@ -131,7 +133,7 @@
 
 .content-area {
   padding: 20px;
-  overflow-y: auto;
+  overflow: visible;
   max-width: 100%;      /* 确保内容区域不会溢出 */
 }
 

@@ -65,7 +65,7 @@
 
 .vscode-markdown p {
   margin: 1em 0 1.2em; /* 增加段落间的垂直空间，特别是底部空间 */
-  max-width: 70ch; /* 限制理想的行宽，大约为70个字符宽度，提高可读性 */
+  /* max-width: 70ch; 限制理想的行宽，大约为70个字符宽度，提高可读性 */
 }
 
 .vscode-markdown a {
@@ -405,6 +405,10 @@
   width: fit-content;
 }
 
+.hbe-badge {
+  display: none;
+}
+
 .hbe-title {
   font-size: 1.2rem;
   font-weight: 700;
@@ -446,8 +450,8 @@
   padding: 0.6rem 0.9rem;
   font-size: 0.95rem;
   border-radius: 0.5rem;
-  border: 1px solid var(--vscode-input-border);
-  background-color: var(--vscode-input-background);
+  border: 1px solid var(--vscode-active);
+  background-color: var(--vscode-sidebar);
   color: var(--vscode-input-foreground);
   transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
   outline: none;
@@ -458,6 +462,10 @@
   box-shadow: 0 0 0 2px rgba(86, 156, 214, 0.25);
 }
 
+.hbe-input::placeholder {
+  color: rgba(255, 255, 255, 0.55);
+}
+
 /* Input wrapper for password toggle */
 .hbe-input-wrapper {
   position: relative;
@@ -465,17 +473,18 @@
   display: flex;
   align-items: center;
   min-width: 0; /* Prevent flex item from overflowing */
+  overflow: visible;
 }
 
 .hbe-input-wrapper .hbe-input {
   width: 100%;
-  padding-right: 2.75rem;
+  padding-right: 3rem;
   box-sizing: border-box;
 }
 
 .hbe-toggle-password {
   position: absolute;
-  right: 0.5rem;
+  right: 1.1rem;
   top: 50%;
   transform: translateY(-50%);
   display: flex;
@@ -490,7 +499,7 @@
   color: var(--vscode-descriptionForeground);
   cursor: pointer;
   transition: color 0.2s ease, background-color 0.2s ease;
-  z-index: 1; /* Ensure toggle button is above input */
+  z-index: 2; /* above native controls */
 }
 
 .hbe-toggle-password:hover {
@@ -517,7 +526,12 @@
   align-items: center;
   justify-content: center;
   gap: 0.45rem;
+  flex-wrap: nowrap;
+  flex: 0 0 auto;
   height: 2.75rem;
+  line-height: 2.75rem;
+  vertical-align: middle;
+  margin: 0;
   padding: 0 1.15rem;
   font-size: 0.95rem;
   font-weight: 600;
@@ -528,6 +542,14 @@
   cursor: pointer;
   transition: all 0.2s ease;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  align-self: center;
+  white-space: nowrap; /* 防止箭头换行 */
+  min-width: fit-content; /* 避免被压缩到换行 */
+}
+
+.hbe-button svg {
+  display: block;
 }
 
 .hbe-button:hover {
@@ -537,8 +559,23 @@
 
 .hbe-button .hbe-arrow {
   margin-left: 0.5rem;
-  width: 16px;
-  height: 16px;
+  flex-shrink: 0; /* 避免在空间紧张时挤到下一行 */
+  align-self: center;
+  width: auto;
+  height: auto;
+  line-height: 1;
+  display: inline-block;
+}
+
+.hbe-button > span {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap !important; /* 强制文字不换行 */
+  flex: 0 0 auto; /* 避免文本被压缩导致换行 */
+  color: var(--vscode-button-foreground) !important; /* 确保文字可见 */
+  line-height: 1; /* 避免基线导致的垂直偏移 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .hbe-button.loading {
@@ -736,6 +773,42 @@
 #hexo-blog-encrypt.hbe-unlocked .hbe-header,
 #hexo-blog-encrypt.hbe-unlocked .hbe-content-wrapper {
   display: none;
+}
+
+/* Smooth swap classes for unlock */
+#hexo-blog-encrypt .hbe-anim {
+  will-change: opacity, transform;
+  transition: opacity .24s ease, transform .24s ease;
+}
+
+#hexo-blog-encrypt .hbe-anim.hbe-fade-out {
+  opacity: 0;
+  transform: translateY(-4px);
+  pointer-events: none;
+}
+
+#hexo-blog-encrypt .hbe-anim.hbe-fade-in {
+  opacity: 0;
+  transform: translateY(4px);
+}
+
+#hexo-blog-encrypt .hbe-anim.hbe-fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hide browser native password reveal/clear buttons to avoid duplicate eyes */
+.hbe-input::-ms-reveal,
+.hbe-input::-ms-clear,
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none !important;
+}
+
+.hbe-input::-webkit-credentials-auto-fill-button {
+  visibility: hidden;
+  pointer-events: none;
+  display: none !important;
 }
 
 /* Mobile responsive improvements */

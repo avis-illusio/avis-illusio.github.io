@@ -3,7 +3,7 @@
   <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>第 3 章 第一堂课 | 《光环》档案馆</title><meta name="robots" content="noindex">
+  <title>第 3 章 第一堂课 | 《光环》档案馆</title>
 
   <!-- SEO Meta Tags -->
   <meta name="description" content="诅咒、伴生武器，开学的第一课。">
@@ -62,7 +62,7 @@
   <link rel="stylesheet" href="../../../../css/mermaid.css">
 
   <link rel="stylesheet" href="../../../../css/vs-code.css">
-  <link rel="stylesheet" href="../../../../css/post.css?v=1771514719906">
+  <link rel="stylesheet" href="../../../../css/post.css?v=1771733542578">
   <link rel="stylesheet" href="../../../../css/tag.css">
   <link rel="stylesheet" href="../../../../css/categories.css">
   <link rel="stylesheet" href="../../../../css/archive.css">
@@ -244,8 +244,9 @@
             
               <span class="updated">
                 <i class="fas fa-sync-alt"></i>
-                更新于: 2026-02-19
+                更新于: 2026-02-22
               </span>
+            
             
             
               <span class="categories">
@@ -335,12 +336,22 @@
 <p>就在这死寂中，一道声音轻柔地落了下来，像是一片在虚空中飘落的雪花。</p>
 <p>“要把我这些同学……带到哪里去啊？”</p>
 <p>那声音听起来如此温柔，甚至带着一丝关切，但是没有任何温度，只有一种站在高处审判蝼蚁的、如神明般的倦怠。</p>
-<!-- flag of hidden posts -->
+
         </div>
         
         <!-- 文章导航 - 只在同分类有多篇文章时显示 -->
         
         
+        
+        <nav class="post-nav">
+          
+          
+            <a class="next" href="../Chapter-2/">
+              第 2 章 觐见之地
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          
+        </nav>
         
         
         <!-- 推荐文章 -->
@@ -477,6 +488,17 @@ document.addEventListener('DOMContentLoaded', function() {
   // 键盘事件
   document.addEventListener('keydown', function(e) {
     if (!items.length) return;
+
+    // 在输入框/选择框/可编辑区域内不处理推荐快捷键
+    const t = e.target;
+    if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.tagName === 'SELECT' || t.isContentEditable)) {
+      return;
+    }
+    // 解密过程中或焦点在密码组件内时，不处理推荐快捷键
+    const hbe = document.getElementById('hexo-blog-encrypt');
+    if (hbe && (hbe.classList.contains('hbe-decrypting') || (document.activeElement && hbe.contains(document.activeElement)))) {
+      return;
+    }
     
     if (e.key === 'Tab') {
       // Tab键导航由浏览器处理
@@ -516,9 +538,16 @@ document.addEventListener('DOMContentLoaded', function() {
       items.forEach(i => i.classList.remove('vs-focused'));
       item.classList.add('vs-focused');
     });
+    item.addEventListener('mouseleave', function() {
+      item.classList.remove('vs-focused');
+    });
+    item.addEventListener('blur', function() {
+      item.classList.remove('vs-focused');
+    });
   });
 });
 </script>
+
 
         
         <!-- 评论区 -->
@@ -541,7 +570,7 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
     <div class="status-item">
       <i class="fas fa-clock"></i>
-      2026-02-19
+      2026-02-22
     </div>
     <div class="status-item">
       欢迎来到 <a href="/about/" target="_self">光环档案馆</a>
@@ -670,7 +699,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 <script src="../../../../js/search.js"></script>
 <script src="../../../../js/theme-switch.js"></script>
 
-<script src="../../../../js/password-protect.js?v=1771514719906"></script>
+<script src="../../../../js/password-protect.js?v=1771733542579"></script>
 
     <script>
       // 移动端菜单切换

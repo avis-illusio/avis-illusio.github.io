@@ -62,7 +62,7 @@
   <link rel="stylesheet" href="../../css/mermaid.css">
 
   <link rel="stylesheet" href="../../css/vs-code.css">
-  <link rel="stylesheet" href="../../css/post.css?v=1771514719902">
+  <link rel="stylesheet" href="../../css/post.css?v=1771733542581">
   <link rel="stylesheet" href="../../css/tag.css">
   <link rel="stylesheet" href="../../css/categories.css">
   <link rel="stylesheet" href="../../css/archive.css">
@@ -229,6 +229,7 @@
             
             
             
+            
           </div>
         </div>
         
@@ -257,6 +258,39 @@
   <div class="vs-recommended-grid">
     
       <div class="vs-recommended-item" data-index="0" tabindex="0">
+        <a href="../novel/Volumn-1/Chapter-3/" class="vs-recommended-link">
+          <!-- 文章信息 -->
+          <div class="vs-recommended-content">
+            <div class="vs-recommended-title">
+              <i class="fas fa-file-code"></i>
+              <span>第 3 章 第一堂课</span>
+            </div>
+            
+            <div class="vs-recommended-excerpt">
+              诅咒、伴生武器，开学的第一课。
+            </div>
+            
+            <div class="vs-recommended-meta">
+              
+              
+              
+              
+              <span class="vs-meta-info">
+                <span class="vs-date">
+                  <i class="fas fa-calendar-alt"></i>
+                  2月 11
+                </span>
+                <span class="vs-reading-time">
+                  <i class="fas fa-clock"></i>
+                  1 min
+                </span>
+              </span>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      <div class="vs-recommended-item" data-index="1" tabindex="0">
         <a href="../novel/Volumn-1/Chapter-2/" class="vs-recommended-link">
           <!-- 文章信息 -->
           <div class="vs-recommended-content">
@@ -289,7 +323,7 @@
         </a>
       </div>
     
-      <div class="vs-recommended-item" data-index="1" tabindex="0">
+      <div class="vs-recommended-item" data-index="2" tabindex="0">
         <a href="../novel/Volumn-1/Chapter-1/" class="vs-recommended-link">
           <!-- 文章信息 -->
           <div class="vs-recommended-content">
@@ -343,6 +377,17 @@ document.addEventListener('DOMContentLoaded', function() {
   // 键盘事件
   document.addEventListener('keydown', function(e) {
     if (!items.length) return;
+
+    // 在输入框/选择框/可编辑区域内不处理推荐快捷键
+    const t = e.target;
+    if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.tagName === 'SELECT' || t.isContentEditable)) {
+      return;
+    }
+    // 解密过程中或焦点在密码组件内时，不处理推荐快捷键
+    const hbe = document.getElementById('hexo-blog-encrypt');
+    if (hbe && (hbe.classList.contains('hbe-decrypting') || (document.activeElement && hbe.contains(document.activeElement)))) {
+      return;
+    }
     
     if (e.key === 'Tab') {
       // Tab键导航由浏览器处理
@@ -382,9 +427,16 @@ document.addEventListener('DOMContentLoaded', function() {
       items.forEach(i => i.classList.remove('vs-focused'));
       item.classList.add('vs-focused');
     });
+    item.addEventListener('mouseleave', function() {
+      item.classList.remove('vs-focused');
+    });
+    item.addEventListener('blur', function() {
+      item.classList.remove('vs-focused');
+    });
   });
 });
 </script>
+
 
         
         <!-- 评论区 -->
@@ -407,7 +459,7 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
     <div class="status-item">
       <i class="fas fa-clock"></i>
-      2026-02-19
+      2026-02-22
     </div>
     <div class="status-item">
       欢迎来到 <a href="/about/" target="_self">光环档案馆</a>
@@ -536,7 +588,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 <script src="../../js/search.js"></script>
 <script src="../../js/theme-switch.js"></script>
 
-<script src="../../js/password-protect.js?v=1771514719903"></script>
+<script src="../../js/password-protect.js?v=1771733542581"></script>
 
     <script>
       // 移动端菜单切换
