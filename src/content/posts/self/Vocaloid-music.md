@@ -6,7 +6,7 @@ description: '自己喜欢的一些术力口（不定期更新）' # 简介
 # image: ./vocaloid-music.jpg # 封面图片
 tags: [术力口] # 标签
 category: 'Self' # 归档
-draft: false # 关闭以发布
+draft: true # 关闭以发布
 ---
 
 # 星尘Infinity
