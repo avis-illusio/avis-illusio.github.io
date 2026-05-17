@@ -31,3 +31,17 @@ draft: false # 关闭以发布
 
 计划更新：
 - 使用双瓦片搭建地图（感谢 Godot Addon: [TileMapDual](https://github.com/pablogila/TileMapDual)）
+
+## Alpha 0.0.3更新日志
+
+发布日期：2026-5-17
+
+变化：
+- 使用[TileMapDual](https://github.com/pablogila/TileMapDual)进行了地图测试
+- 完成了对剧情触发脚本的**复用性**重置（感谢[Dialogic](https://dialogic.pro/)）
+- 优化了项目结构储存
+- 完成了对伤害计算规范的第一版脚本编写
+
+计划更新：
+- 完整的第一章地图（不包含背景Image与特殊结构）
+- 攻击、受击（包含可视化判定，不包含对象图片）
