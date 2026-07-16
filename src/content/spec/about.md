@@ -1,5 +1,4 @@
 # 关于
-这里记录了我开发游戏过程中的日志和记录
 
 <!-- ::github{repo="saicaca/fuwari"} -->
 
